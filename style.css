@@ -24,7 +24,7 @@ p {
     color: #8B8B8B;
     margin-top: 15px;
     margin-bottom: 30px;
-    width: 550px;
+    width: 460px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -60,7 +60,7 @@ h2 {
     margin-bottom: 10px;
 }
 
-.service {
+.service, .service-d {
     border-color: black;
     border-style: solid;
     border:10px;
@@ -99,12 +99,12 @@ h2 {
         margin-right: 0;
     }
 
-    .all-services {
+    .all-services, .all-services-d {
         display: flex;
         justify-content: space-around;
     }
 
-    .service {
+    .service, .service-d {
         width: calc((100% - 80px)/3);
         display: block;
     }
@@ -116,6 +116,118 @@ h2 {
     .icon {
         padding: 0;
         padding-top: 40px;
+    }
+
+    p {
+        width: 550px;
+    }
+
+}
+
+@media (min-width:1100px) {
+
+    .pruh{
+        max-width: 1040px;
+        margin: 0 auto;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .intro {
+        display: flex;
+        margin-bottom: 80px;
+        /*align-items: center;*/
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+    }
+
+    /*.intro p {
+        margin: 0px
+    }*/
+
+    p {
+        width: 490px;
+    }
+
+    .image {
+        order: 2;
+        margin-top: 60px;
+        width: 490px;
+    }
+
+    .image img {
+        width: 425px;
+        
+    }
+
+    .choice {
+        order: 1;
+        width: 490px;
+        align-items: center;
+    }
+
+    p, h1, h2  {
+        text-align: left;
+    }
+
+
+    .button{
+        justify-content: flex-start;
+    }
+
+
+    .service-box {
+        display: flex;
+        margin-bottom: 80px;
+        width: 100%;
+        align-items: center;
+    }
+
+    .service-text {
+        order: 1;
+        width:  430px;
+        margin-left: 60px;
+        margin-right: 0px;
+    }
+
+    .all-services {
+        margin-right: 0px;
+        justify-content: space-between;
+    }
+
+    .service-text-d {
+        width:  430px;
+        margin-right: 60px;
+    }
+
+    .all-services-d {
+        margin-left: 0px;
+        justify-content: space-between;
+    }
+
+    .service {
+        width: calc((550px-40px)/2);
+        
+    }
+   
+    .service-d {
+        width: calc((550px-40px)/2);
+        
+    }
+
+    .service-text p{
+        width:  430px;
+    }
+
+    .service-text-d p{
+        width:  430px;
     }
 
 }
